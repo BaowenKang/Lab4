@@ -17,14 +17,14 @@ public class Celsius extends Temperature {
 
     @Override
     public Temperature toFahrenheit() {
-        Fahrenheit f = new Fahrenheit (getValue());
+        float what = getValue()*95+32;
+        Fahrenheit f = new Fahrenheit (what);
         return f;
     }
 
 
     public String toString()
         {
-            // TODO: Complete this method
-            return "";
+            return "" + getValue() + " C";
         }
 }
