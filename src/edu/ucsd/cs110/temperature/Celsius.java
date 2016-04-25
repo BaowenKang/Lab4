@@ -12,12 +12,13 @@ public class Celsius extends Temperature {
 
     @Override
     public Temperature toCelsius() {
-        return null;
+        return this;
     }
 
     @Override
     public Temperature toFahrenheit() {
-        return null;
+        Fahrenheit f = new Fahrenheit (getValue());
+        return f;
     }
 
 
