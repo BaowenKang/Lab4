@@ -12,7 +12,7 @@ public class Fahrenheit extends Temperature {
     @Override
     public Temperature toCelsius() {
 
-        Celsius c = new Celsius((getValue()-32)*(5/9));
+        Celsius c = new Celsius((getValue()-32)*5/9);
         return c;
     }
 
